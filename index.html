@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="get" method="get">
+
+          <h1 class="main_heading">Payment Form</h1>
+          <p>required fileds are followed by *</p>
+          <h2>Contact Informatation</h2>
+          <p>Name* : <input type="text" name="name" required  placeholder="Enter Your Name..."><p>
+            <fieldset>
+               <legend>Gender *</legend>
+               <p>Male <input type="radio" name="Gender" id="male" required> Female <input type="radio" name="Gender"
+                id="female" required> Other<input type="radio" name="Gender" id="Other" required ></p>
+            </fieldset>
+          <p>Address : <textarea name="address" id="address" cols="100" rows="10" placeholder="Enter Your Address..."></textarea></p>
+          <p>Email * : <input type="email" name="email" id="email" required placeholder="abc123@gmail.com"></p>
+          <p>Pincode : <input type="number" name="pincode" id="pincode" placeholder="123456"> </p>
+
+          <h2> Payment Information</h2>
+          <p>Card Type *:
+            <select name="card_type" id="caed_type" required>
+               <option value="">--select card type--</option>
+               <option value="visa">visa card</option>
+               <option value="master">master card</option>
+               <option value="rupay">rupay card</option>
+            </select>
+          </p>
+          <p>Card_Number * : <input type="number" name="card_number" id="card_number" required placeholder="1111-2222-3333-4444"></p>
+          <p>Expire Date * : <input type="date" name="exp_date" id="exp_date" required></p>
+          <p>CVV *: <input type="password" name="cvv" id="cvv" required placeholder="000"></p>
+          <p>Bankpassbook :</p><p class="file"> <input type="file" name="choosen_file" id="choosen_file"></p>
+          <br>  
+          <input type="submit" value="pay now">     <input type="reset" value="reset">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
